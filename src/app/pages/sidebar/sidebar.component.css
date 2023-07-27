@@ -1,0 +1,39 @@
+/* src/app/sidebar/sidebar.component.css */
+
+nav {
+    background-color: blueviolet;
+    width: 20%;
+    height: 800px;
+    padding-top: 20px;
+  }
+  
+  ul.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul.menu li {
+    padding: 10px 20px;
+  }
+  
+  ul.menu li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* ul.submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+  } */
+  
+  ul.has-submenu:hover ul.submenu {
+    display: block;
+  }
+  
+  ul.submenu li {
+    padding: 5px 20px;
+  }
+  

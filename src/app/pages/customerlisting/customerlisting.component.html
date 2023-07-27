@@ -1,0 +1,69 @@
+<div class="contain">
+    <app-header1></app-header1>
+<app-sidebar1></app-sidebar1>
+<div class="container">
+
+<div class="form-group">
+    <input type="text" class="forl-control search-field"   placeholder="Search Here"
+    [(ngModel)]="searchtext">
+</div>
+<!-- <div class="example-container mat-elevation-z8">
+  <mat-table #table [dataSource]="dataSource">
+
+   
+    <ng-container matColumnDef="id">
+      <mat-header-cell *matHeaderCellDef> Id </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+      <mat-cell *matCellDef="let element" [innerHTML]="element.name"></mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="email">
+      <mat-header-cell *matHeaderCellDef> Email </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.email}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="gender">
+      <mat-header-cell *matHeaderCellDef> Gender </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.gender}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="status">
+        <mat-header-cell *matHeaderCellDef> Status </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.status}} </mat-cell>
+      </ng-container>
+
+     
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</div> -->
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Gender</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let customer of customers | searchfilter: searchtext">
+      <td>{{ customer.id }}</td>
+      <td>{{ customer.name }}</td>
+      <td>{{ customer.email }}</td>
+      <td>{{ customer.gender }}</td>
+      <td>{{ customer.status }}</td>
+
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+</div>

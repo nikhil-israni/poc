@@ -1,1 +1,106 @@
+/* @import url(‘~bootstrap/dist/css/bootstrap.min.css’); */
+/* @import "~bootstrap/dist/css/bootstrap.min.css"; */
+
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
+@import url('../node_modules/simple-keyboard/build/css/index.css');
+
+/* body {
+  background-color: brown;
+} */
+.auth-card {
+  background: #c31432; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px #f7f7f7;
+}
+label {
+  color: #fff;
+  font-weight: 700;
+}
+.user-image {
+  height: 70px;
+}
+.auth-avatar {
+  text-align: center;
+  margin-top: -50px;
+}
+.auth {
+  margin-top: 35px;
+  border: none;
+  border-radius: 6px;
+}
+.btn-my {
+  background-color: #d39e00;
+  border-color: #d39e00;
+  color: #fff;
+}
+.simple-keyboard {
+  max-width: 850px;
+}
 /* You can add global styles to this file, and also import other style files */
+/* styles.css */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.sidebar {
+  background-color: #f2f2f2;
+  width: 200px;
+  padding: 10px;
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height:1000px;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-list li {
+  margin-bottom: 10px;
+}
+
+.menu-list li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.menu-list li a i {
+  margin-right: 5px;
+}
+
+.menu-list li a:hover {
+  color: #007bff;
+}
+
+.menu-list li ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.menu-list li ul li {
+  margin-bottom: 5px;
+}
+
+.menu-list li ul li a {
+  color: #555;
+  text-decoration: none;
+}
+
+.menu-list li ul li a:hover {
+  color: #007bff;
+}

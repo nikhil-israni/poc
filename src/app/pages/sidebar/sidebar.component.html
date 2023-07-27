@@ -1,0 +1,17 @@
+<!-- src/app/sidebar/sidebar.component.html -->
+
+<nav>
+    <ul class="menu">
+      <li *ngFor="let menuItem of menuItems" [ngClass]="{'has-submenu': menuItem.subMenu}">
+        <a *ngIf="!menuItem.subMenu" [routerLink]="menuItem.link">{{ menuItem.title }}</a>
+        <span *ngIf="menuItem.subMenu">{{ menuItem.title }}</span>
+        <ul *ngIf="menuItem.subMenu" class="submenu">
+          <li *ngFor="let subMenuItem of menuItem.subMenu">
+            <a [routerLink]="subMenuItem.link">{{ subMenuItem.title }}</a>
+          </li>
+          
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  

@@ -1,0 +1,52 @@
+{
+    "menu": [
+      {
+        "id": 1,
+        "title": "Home",
+        "icon": "home",
+        "route": "/dashboard"
+      },
+      {
+        "id": 2,
+        "title": "Products",
+        "icon": "shopping_cart",
+        "route": "/products",
+        "subMenu": [
+          {
+            "id": 21,
+            "title": "Electronics",
+            "route": "/products/electronics"
+          },
+          {
+            "id": 22,
+            "title": "Clothing",
+            "route": "/products/clothing"
+          },
+          {
+            "id": 23,
+            "title": "Books",
+            "route": "/products/books"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "icon":"description",	
+        "title": "Customer-Listing",
+        "route": "/customerlisting"
+      },
+      {
+        "id": 4,
+        "icon":"chat",	
+        "title": "Chat-Room",
+        "route": "/chatroom"
+      },
+      {
+        "id": 5,
+        "title": "About Us",
+        "icon": "info",
+        "route": "/about"
+      }
+    ]
+  }
+  

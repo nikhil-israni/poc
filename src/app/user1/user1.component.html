@@ -1,0 +1,7 @@
+
+
+
+<h2>User 1</h2>
+    <textarea [(ngModel)]="message" placeholder="Type your message"></textarea>
+    <button (click)="sendMessage()">Send</button>
+    <div *ngFor="let receivedMessage of receivedMessages">{{ receivedMessage }}</div>

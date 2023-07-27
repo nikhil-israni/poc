@@ -1,0 +1,12 @@
+/* middle-line.component.css */
+.middle-line {
+    width: 2px;
+    height: 248vh;
+    background-color: #000;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    /* margin-top: -109px; */
+    transform: translateX(-50%);
+  }
+  
